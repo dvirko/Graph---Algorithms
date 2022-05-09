@@ -10,6 +10,7 @@ public class BFS {
             System.out.println(root.getName());
             for (Vertex v:root.getNeighbor()) {
                 if(!v.isVisited()){
+                    v.setVisited(true);
                     queue.add(v);
                 }
 
